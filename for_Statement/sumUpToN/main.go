@@ -41,8 +41,8 @@ func main() {
 	}
 
 	var sum int
-	min, err1 := strconv.Atoi(os.Args[0])
-	max, err2 := strconv.Atoi(os.Args[1])
+	min, err1 := strconv.Atoi(args[0])
+	max, err2 := strconv.Atoi(args[1])
 
 	if err1 != nil || err2 != nil || min >= max {
 		fmt.Println("wrong numbers")
