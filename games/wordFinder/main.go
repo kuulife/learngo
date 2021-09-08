@@ -19,6 +19,7 @@ func main() {
 		return
 	}
 
+
 	for _, q := range query {
 		for i, w := range words {
 			if strings.ToLower(q) == strings.ToLower(w) {
