@@ -46,15 +46,15 @@ import (
 func main() {
 
 	const (
-		EUR = iota
-		GBP
-		JPY
+		USD = iota
+		EUR
+		NTD
 	)
 
 	rates := [...]float64{
-		EUR: 0.88,
-		GBP: 0.78,
-		JPY: 113.02,
+		USD: 0.012,
+		EUR: 0.0100,
+		NTD: 0.33,
 	}
 
 	args := os.Args[1:]
@@ -71,7 +71,7 @@ func main() {
 		return
 	}
 
-	fmt.Printf("%.2f USD is %.2f EUR\n", amount, rates[EUR]*amount)
-	fmt.Printf("%.2f USD is %.2f GBP\n", amount, rates[GBP]*amount)
-	fmt.Printf("%.2f USD is %.2f JPY\n", amount, rates[JPY]*amount)
+	fmt.Printf("%.2f SOM is %.2f USD\n", amount, rates[USD]*amount)
+	fmt.Printf("%.2f SOM is %.2f EUR\n", amount, rates[EUR]*amount)
+	fmt.Printf("%.2f SOM is %.2f NTD\n", amount, rates[NTD]*amount)
 }
