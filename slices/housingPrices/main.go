@@ -89,4 +89,33 @@ Istanbul,500,10,5,1000000`
 		fmt.Printf("%-15d", prices[i])
 		fmt.Println()
 	}
+
+	fmt.Printf("%s\n", strings.Repeat("=", 75))
+	fmt.Printf("%-15s", "")
+
+	var sum int
+
+	for _, n := range sizes {
+		sum += n
+	}
+	fmt.Printf("%-15.2f", float64(sum)/float64(len(sizes)))
+	sum = 0
+	for _, n := range beds {
+		sum += n
+	}
+	fmt.Printf("%-15.2f", float64(sum)/float64(len(beds)))
+
+	sum = 0
+	for _, n := range baths {
+		sum += n
+	}
+	fmt.Printf("%-15.2f", float64(sum)/float64(len(baths)))
+
+	sum = 0
+	for _, n := range prices {
+		sum += n
+	}
+	fmt.Printf("%-15.2f", float64(sum)/float64(len(prices)))
+
+	fmt.Println()
 }
