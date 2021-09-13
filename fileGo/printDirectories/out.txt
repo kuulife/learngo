@@ -1,0 +1,8 @@
+/Users/amangeldiev/hello
+	.idea/
+	hahah/
+	hi/
+
+/Users/amangeldiev/hello/hahah
+	heh/
+
