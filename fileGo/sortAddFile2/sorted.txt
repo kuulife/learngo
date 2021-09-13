@@ -1,0 +1,13 @@
+1. apple
+2. apricot
+3. avacado
+4. banana
+5. blueberry
+6. cherry
+7. grapes
+8. kivi
+9. limon
+10. orange
+11. peaches
+12. strawberry
+13. watermelon
