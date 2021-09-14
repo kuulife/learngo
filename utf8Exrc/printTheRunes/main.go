@@ -24,7 +24,7 @@ import (
 
 func main() {
 	const word = "console"
-	
+
 	for _, verb := range word {
 		fmt.Printf("%c =\t{\n", verb)
 		fmt.Printf("\t  decimal: %d\n", verb)
